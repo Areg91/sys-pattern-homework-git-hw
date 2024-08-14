@@ -24,21 +24,91 @@
 
 ### Задание 1
 
-`Приведите ответ в свободной форме........`
+`Сделал - ссылка на коммит: [First commit](https://github.com/Areg91/new-repo-1/commit/596b274c37fff6e84543dfacc50957ecc3c1d4e3)`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
+
+нечего коммитить, нет изменений в рабочем каталоге
+aper@ariken-PC:~/new-repo-1$ ls
+README.md
+aper@ariken-PC:~/new-repo-1$ nano README.md 
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add <файл>...», чтобы добавить файл в индекс)
+  (используйте «git restore <файл>...», чтобы отменить изменения в рабочем каталоге)
+	изменено:      README.md
+
+индекс пуст (используйте «git add» и/или «git commit -a»)
+aper@ariken-PC:~/new-repo-1$ git diff
+diff --git a/README.md b/README.md
+index f189ba6..c935e0b 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,3 @@
+ # new-repo-1
++
++Add new text
+aper@ariken-PC:~/new-repo-1$ git add README.md 
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
+
+Изменения, которые будут включены в коммит:
+  (используйте «git restore --staged <файл>...», чтобы убрать из индекса)
+	изменено:      README.md
+
+aper@ariken-PC:~/new-repo-1$ git diff
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
+
+Изменения, которые будут включены в коммит:
+  (используйте «git restore --staged <файл>...», чтобы убрать из индекса)
+	изменено:      README.md
+
+aper@ariken-PC:~/new-repo-1$ git commit -am "First commit"
+[main 596b274] First commit
+ 1 file changed, 2 insertions(+)
+aper@ariken-PC:~/new-repo-1$ git statos
+git: «statos» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+	status
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Ваша ветка опережает «origin/main» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+aper@ariken-PC:~/new-repo-1$ git push origin master
+error: src refspec master ничему не соответствует
+error: не удалось отправить некоторые ссылки в «github.com:Areg91/new-repo-1.git»
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Ваша ветка опережает «origin/main» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+aper@ariken-PC:~/new-repo-1$ git push
+Перечисление объектов: 5, готово.
+Подсчет объектов: 100% (5/5), готово.
+Запись объектов: 100% (3/3), 277 байтов | 277.00 КиБ/с, готово.
+Всего 3 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:Areg91/new-repo-1.git
+   1aa84ac..596b274  main -> main
+aper@ariken-PC:~/new-repo-1$ git status
+Текущая ветка: main
+Эта ветка соответствует «origin/main».
+
+нечего коммитить, нет изменений в рабочем каталоге
+
 ```
 
 `При необходимости прикрепитe сюда скриншоты
