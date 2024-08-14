@@ -24,7 +24,8 @@
 
 ### Задание 1
 
-`Сделал - ссылка на коммит: [First commit](https://github.com/Areg91/new-repo-1/commit/596b274c37fff6e84543dfacc50957ecc3c1d4e3)`
+`Задание сделал - ссылка на коммит`
+1. [First commit](https://github.com/Areg91/new-repo-1/commit/596b274c37fff6e84543dfacc50957ecc3c1d4e3)`
 
 
 ```
@@ -111,77 +112,93 @@ aper@ariken-PC:~/new-repo-1$ git status
 
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
-
-
 ---
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+`Задание выполнил в 2 коммита`
+1. [update gitignore](https://github.com/Areg91/new-repo-1/commit/ba8b35683bf3956566f21ae2b272019a9993927d)`
+2. [update gitignore](https://github.com/Areg91/new-repo-1/commit/c1ac79371b240238c260b9fd463b6ced37bcc91b)
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+aper@ariken-PC:~/new-repo-1$ touch .gitignore
+aper@ariken-PC:~/new-repo-1$ git add .gitignore 
+aper@ariken-PC:~/new-repo-1$ echo .pyc > .gitignore 
+aper@ariken-PC:~/new-repo-1$ echo *.pyc > .gitignore 
+aper@ariken-PC:~/new-repo-1$ echo cache* > .gitignore 
+aper@ariken-PC:~/new-repo-1$ git commit -am "update gitignore"
+[main ba8b356] update gitignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
 ```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 2](ссылка на скриншот 2)`
-
 
 ---
 
 ### Задание 3
 
-`Приведите ответ в свободной форме........`
+`Сделал задание, прикрепляю ссылку на сеть git веток`
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+1. [Network of Areg91](https://github.com/Areg91/new-repo-1/network)
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+aper@ariken-PC:~/new-repo-1$ git branch dev
+aper@ariken-PC:~/new-repo-1$ git checkout dev
+Переключились на ветку «dev»
+aper@ariken-PC:~/new-repo-1$ echo "echo test.sh" > test.sh
+aper@ariken-PC:~/new-repo-1$ git add test.sh 
+aper@ariken-PC:~/new-repo-1$ git commit -am "add script"
+[dev 1d50eb2] add script
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.sh
+aper@ariken-PC:~/new-repo-1$ echo "echo add new output" >> test.sh
+aper@ariken-PC:~/new-repo-1$ git commit -am "add some outputs"
+[dev b451faf] add some outputs
+ 1 file changed, 1 insertion(+)
+aper@ariken-PC:~/new-repo-1$ echo "echo 1 + 1 = 2" >> test.sh
+aper@ariken-PC:~/new-repo-1$ git commit -am "integrate some math to test.sh"
+[dev 395b293] integrate some math to test.sh
+ 1 file changed, 1 insertion(+)
+aper@ariken-PC:~/new-repo-1$ git push
+fatal: The current branch dev has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin dev
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+aper@ariken-PC:~/new-repo-1$ git push origin dev
+Перечисление объектов: 10, готово.
+Подсчет объектов: 100% (10/10), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (6/6), готово.
+Запись объектов: 100% (9/9), 841 байт | 841.00 КиБ/с, готово.
+Всего 9 (изменений 2), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (2/2), done.
+remote: 
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/Areg91/new-repo-1/pull/new/dev
+remote: 
+To github.com:Areg91/new-repo-1.git
+ * [new branch]      dev -> dev
+aper@ariken-PC:~/new-repo-1$ git checkout main 
+Переключились на ветку «main»
+Эта ветка соответствует «origin/main».
+aper@ariken-PC:~/new-repo-1$ git merge dev
+Обновление c1ac793..395b293
+Fast-forward
+ test.sh | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 test.sh
+aper@ariken-PC:~/new-repo-1$ git commit -am "merge commit"
+Текущая ветка: main
+Ваша ветка опережает «origin/main» на 3 коммита.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+aper@ariken-PC:~/new-repo-1$ git push
+Всего 0 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:Areg91/new-repo-1.git
+   c1ac793..395b293  main -> main
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
-
-### Задание 4
-
-`Приведите ответ в свободной форме........`
-
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
-
-```
-Поле для вставки кода...
-....
-....
-....
-....
-```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
